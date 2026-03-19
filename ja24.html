@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script language="Javascript">
+        function compute() {
+            var add = parseInt(document.forms[0].first.value);
+            add = add + parseInt(document.forms[o].second.value);
+            document.forms[0].addition.value=add;
+            var add = parseInt(document.forms[0].first.value) ;
+            add = add - parseInt(document.forms[0].second.value);
+            document.forms[0].subraction.value=add;
+            var add = parseInt(document.forms[0].first.value);
+            add = add * parseInt(document.forms[0].second.value);
+            documnet.forms[0].multiplication.value=add;
+        }
+        function resetIt() {
+            document.forms[0].cost.value="";
+            document.forms[0].tax.value="";
+            document.forms[0].unformatted_tax.value="";
+            document.forms[0].formatted_tax.value="";
+            document.forms[0].total_cost.value="";
+        }
+    </script>
+    <center>
+         <FORM>
+        <TABLE border="2" width="300" cellpadding="3">
+            <TR>
+                <TD align="center"><FONT SIZE="+1"><STRONG>first</STRONG></FONT>
+                    <TD align="center"><FONT SIZE="+1"><STRONG>second</STRONG></FONT>
+            </TR>
+            <TR>
+                <TD align="center"><input type="text" NAME="second" VALUE="0" SIZE=10>
+                    <TD align="center"><input type="text" NAME="second" VALUE="0" SIZE=10>
+            </TR>
+        </TABLE>
+        <br>
+        <table border="1" width="600" cellpadding="3">
+            <tr>
+                <td align="center"><FONT  SIZE="+1"><STRONG>addition</STRONG></FONT>
+                    <td align="center"><FONT  SIZE="+1"><STRONG>subraction</STRONG></FONT>
+                        <td align="center"><FONT  SIZE="+1"><STRONG>multipilication</STRONG></FONT>
+            </tr>
+            <TR>
+                
+            <TD align="center"><INPUT type="text" name="addition" SIZE="15">
+                <TD align="center"><INPUT type="text" name="subraction" SIZE="15">
+                    <TD align="center"><INPUT type="text" name="multiplication" SIZE="15">
+            </TR>
+        </table>
+        <br>
+        <TABLE border="0" width="400" cellpadding="5">
+            <TR>
+                <TD align="center"><INPUT type="reset" value="RESET" onclick="resetIt()">
+                    <TD align="center"><INPUT type="button" value="COMPUTE" onclick="compute()">
+            </TR>
+        </TABLE>
+    </FORM>
+    </center>
+</body>
+</html>
